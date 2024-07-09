@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* <weight>: Use a value from 300 to 800 
+font-weight: <weight>;
+400 - regular
+600 - semi-bold
+*/
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+
+/* Screens */
+
+body{
+    color: #2e363e;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    font-weight: 600;
+    /* position: relative; */
+    /* height: 1000vh; */
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.hidden {
+    display: none;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}

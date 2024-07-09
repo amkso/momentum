@@ -5,5 +5,8 @@ const images = [
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
-bgImage.src = `img//${chosenImage}`;
+bgImage.src = `background_imgs//${chosenImage}`;
+bgImage.draggable = false;
+bgImage.classList.add("background");
 document.body.appendChild(bgImage);
+draggable="false"
