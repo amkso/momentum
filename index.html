@@ -12,34 +12,48 @@
         <span>Hello, what's your name?</span>
         <input 
             required maxlength="15"
-            type="text" placeholder="what is your name?" 
+            type="text" 
         />
-         <!-- <input type="submit" value="Log In" /> -->
     </form>
-    <!-- 로그인시 hidden 삭제로 보이고 위는 toggle로 안보이기 -->
+
     <header>
-        <div>1</div>
+        <div>
+            <span>
+                Links
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+        <div id="weather">
+            <span>10도</span>
+            <span>gwangju</span>
+        </div>
     </header>
 
     <main>
-        
-        <h2 id="clock">00:00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
+        <div>
+            <h2 id="clock">00:00:00</h2>
+            <h1 id="greeting">sad</h1>
+        </div>
         <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
+            <input type="text" required />
         </form>
-        <ul id="todo-list"></ul>
+    </main>
+
+    <footer>
+        <div>
+            <span>
+                <i class="fa-solid fa-gear"></i>
+                Setting
+            </span>
+        </div>
         <div id="quote">
             <span></span>
             <span></span>
         </div>
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div>
+            <span class="todo-list">Todo</span>
         </div>
-    </main>
-
-    <footer></footer>
+    </footer>
     
     <script src="js//greetings.js"></script>
     <script src="js//clock.js"></script>
@@ -47,5 +61,6 @@
     <script src="js//background.js"></script>
     <script src="js//todo.js"></script>
     <script src="js//weather.js"></script>
+    <script src="https://kit.fontawesome.com/a0d6e39fb7.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,49 +9,87 @@ font-weight: <weight>;
 
 /* Components */
 @import "components//background.css";
+@import "components//login-form.css";
+
 
 /* Screens */
-header{
-    height: 10%;
-    width: 100%;
-}
-
 body{
-    color: #2e363e;
+    color: white;
     font-family: "Open Sans", sans-serif;
-    display: block;
+    /* display: flex;
+    flex-direction: column; */
     font-weight: 600;
     /* position: relative; */
     /* height: 1000vh; */
 }
 
+header,
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div:first-child {
+    width: 8vw;
+}
+header div:last-child {
+    width: 10vw;
+}
+
+footer div,
+footer span,
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div:first-child{
+    width: 8vw;
+}
+footer div:nth-child(2){
+    flex-direction: column;
+}
+footer div:last-child{
+    width: 8vw;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div h1,
+main form input {
+    font-size: 36px;
+    color: white;
+}
+
+main form input {
+    border-width: 0 0 2px;
+    border-bottom-color: white;
+    background-color: transparent;
+}
+
+
 .main-screen {
     padding: 0px var(--horizontal-space);
 }
-
-
-.login-form_flex {
-    display: flex;
-}
-.login-form_none {
-    display: none;
-}
-.login-form_flex,
-.login-form_none {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100dvh;
-}
-
-
-/* #login-form span,
-#login-form input {
-    display: flex;
-} */
 
 .hidden {
     display: none;
 }
 
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 

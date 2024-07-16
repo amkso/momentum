@@ -1,0 +1,25 @@
+.login-form_flex {
+    display: flex;
+}
+.login-form_none {
+    display: none;
+}
+.login-form_flex,
+.login-form_none {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+.login-form_flex span,
+.login-form_flex input {
+    font-size: 36px;
+    color: white;
+}
+
+.login-form_flex input {
+    border-width: 0 0 2px;
+    border-bottom-color: white;
+    background-color: transparent;
+}

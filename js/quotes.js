@@ -12,10 +12,6 @@ const quotes = [
         author: 'John D. Rockefeller'
     },
     {
-        quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
-        author: 'Martin Luther King Jr.'
-    },
-    {
         quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
         author: 'Thomas Edison'
     },
@@ -47,4 +43,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `- ${todaysQuote.author} -`;
