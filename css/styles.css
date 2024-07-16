@@ -8,13 +8,18 @@ font-weight: <weight>;
 @import "variables.css";
 
 /* Components */
+@import "components//background.css";
 
 /* Screens */
+header{
+    height: 10%;
+    width: 100%;
+}
 
 body{
     color: #2e363e;
     font-family: "Open Sans", sans-serif;
-    display: flex;
+    display: block;
     font-weight: 600;
     /* position: relative; */
     /* height: 1000vh; */
@@ -24,18 +29,29 @@ body{
     padding: 0px var(--horizontal-space);
 }
 
+
+.login-form_flex {
+    display: flex;
+}
+.login-form_none {
+    display: none;
+}
+.login-form_flex,
+.login-form_none {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+
+/* #login-form span,
+#login-form input {
+    display: flex;
+} */
+
 .hidden {
     display: none;
 }
 
-.background {
-    position: absolute;
-    display: block;
-    width:100%;
-    height:100%;
-    top: 0px;
-    left: 0px;
-    background-size: cover;
-    opacity: 0.8;
-    z-index: -1;
-}
+

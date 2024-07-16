@@ -9,4 +9,3 @@ bgImage.src = `background_imgs//${chosenImage}`;
 bgImage.draggable = false;
 bgImage.classList.add("background");
 document.body.appendChild(bgImage);
-draggable="false"
