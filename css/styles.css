@@ -66,16 +66,43 @@ main{
     align-items: center;
 }
 
-main div h1,
-main form input {
+.div_padding{
+    height: 5vh;
+}
+
+#clock{
+    font-size: 108px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#greeting,
+#todo-form span,
+#todo-form input {
     font-size: 36px;
+}
+
+#clock,
+#greeting,
+#todo-form span,
+#todo-form input {
     color: white;
 }
 
-main form input {
+#todo-form input {
     border-width: 0 0 2px;
     border-bottom-color: white;
     background-color: transparent;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-form span{
+    padding-bottom: 10px;
 }
 
 
