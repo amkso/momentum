@@ -67,7 +67,7 @@ main{
 }
 
 .div_padding{
-    height: 5vh;
+    height: 10vh;
 }
 
 #clock{
@@ -76,10 +76,17 @@ main{
     padding-bottom: 5px;
 }
 
-#greeting,
+
 #todo-form span,
 #todo-form input {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 400;
+    opacity: 0.8;
+    width: 520px;
+}
+
+#greeting{
+    font-size: 40px;
 }
 
 #clock,
@@ -102,6 +109,8 @@ main{
 }
 
 #todo-form span{
+    display: flex;
+    justify-content: center;
     padding-bottom: 10px;
 }
 
